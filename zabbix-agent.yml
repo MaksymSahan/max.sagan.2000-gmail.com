@@ -1,0 +1,12 @@
+#####################################################
+# https://github.com/vargaloid                      #
+# Install zabbix-agent-4.0                          #
+# For CentOS7; Debian 8, 9, 10; Ubuntu 16.04, 18.04 #
+# Version 0.06                                      #
+#####################################################
+---
+- hosts: "{{ hosts }}"
+  become: yes
+  remote_user: msahan
+  roles:
+    - zabbix.agent
